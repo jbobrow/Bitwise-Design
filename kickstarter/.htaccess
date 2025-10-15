@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kickstarter\.bitwise\-design\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.kickstarter\.bitwise\-design\.com$
+RewriteRule ^/?$ "http\:\/\/www\.kickstarter\.com\/projects\/1059262388\/keybit\-magsafe\-adapter\-key\-ring" [R=301,L]
+

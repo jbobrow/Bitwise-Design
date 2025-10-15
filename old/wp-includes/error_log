@@ -1,0 +1,1 @@
+[23-Dec-2022 09:30:03 America/Chicago] PHP Fatal error:  Call to undefined function add_action() in /home2/bitwise/public_html/old/wp-includes/general-template.php on line 1282

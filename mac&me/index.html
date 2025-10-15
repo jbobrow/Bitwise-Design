@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>mac & me</title>
+		<meta name="mac & me" content="30 years of macs create an image of you! Created by Jonathan Bobrow">
+		<!--[if lt IE 9]>
+			<script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
+		<![endif]-->
+		<link rel="stylesheet" href="http://images.apple.com/v/30-years/a/fonts/myriad/font.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<script src="js/processing-1.4.1.min.js"></script>
+		<script src="js/save.js"></script>
+		<script type="text/javascript">
+			// convenience function to get the id attribute of generated sketch html element
+			function getProcessingSketchId () { return 'sketch'; }		
+
+			var video = document.createElement("video");
+			video.setAttribute("style", "display:none;");
+			video.setAttribute("id", "videoOutput");
+			video.setAttribute("width", "640px");
+			video.setAttribute("height", "480px");
+			video.setAttribute("autoplay", "true");
+			if(document.body!=null) document.body.appendChild(video);
+			 
+			function init() {
+			    if (navigator.webkitGetUserMedia) {
+			        navigator.webkitGetUserMedia({video:true}, gotStream, noStream);
+			 
+			        function gotStream(stream) {
+			            video.src = webkitURL.createObjectURL(stream);
+			            video.onerror = function () {
+			                stream.stop();
+			                streamError();
+			            };
+			        }
+			 
+			        function noStream() {
+			            alert('No camera available.');
+			        }
+			 
+			        function streamError() {
+			            alert('Camera error.');
+			        }
+			    }
+			}
+
+			var jsString = "Hello from JavaScript!";
+	        var printMessage = function (msg) {
+	            document.getElementById('30_years_portrait').innerHTML = msg;
+	        };
+	
+	        
+		</script>
+	</head>
+	<body id="page">
+		<div id="info">
+			<div id="logo">
+				<img src="img/logo_120.png"/>
+			</div>
+			<h1>mac & me</h1>
+			<p>Allow the page to use your webcam and generate images of you with <b>30 years worth of apple computers</b>. You can download the font and text file to import into any text editor or illustrator to print your very own <b>mac & me</b> portrait.</p>
+			<ul>
+				<li><a href="fonts/fonts.zip">download fonts</a></li>
+				<li><a id="export" class="myButton" download="30_years_portrait.txt" href="#">download still</a></li>
+			</ul>
+		</div>
+	    <div id="30_years_portrait_container">
+	    	<p id="30_years_portrait"></p>
+	    </div>
+  		<div id="processing">
+			<canvas id="sketch" data-processing-sources="pde/webcam.pde" 
+					width="640" height="480">
+				<p>Your browser does not support the canvas tag.</p>
+				<!-- Note: you can put any alternative content here. -->
+			</canvas>
+			<noscript>
+				<p>JavaScript is required to view the contents of this page.</p>
+			</noscript>
+		</div>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-2756299-13', 'bitwise-design.com');
+		  ga('send', 'pageview');
+		
+		</script>
+	</body>
+</html>

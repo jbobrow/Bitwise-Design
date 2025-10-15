@@ -1,0 +1,51 @@
+body{
+	background-image: url("../img/background_960.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #eee;
+	font-family: sans-serif;
+}
+
+h1{	font-size: 1.5em; font-weight: 600; }
+h2{ font-size: 1.5em; }
+
+p{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a:link{		color: #116677;
+			text-decoration: none; }
+
+a:visited{	color: #116677; }
+
+a:hover{	color: #000; }
+
+a:active{	color: #116677; }
+
+
+#logo{
+}
+
+#container{
+	margin: -20px 0 0 60px;
+	padding: 0px;
+}
+
+#sale{
+	bottom: 25px;
+	right: 30px;
+	text-align: right;
+	float: right;
+	position: absolute; 
+}
+
+#desc{
+	color: #eee;
+	background-color: rgba(1,1,1,.5);
+	margin: 20px 50% 0px 25px;
+	padding:20px;
+	width: 30%;
+	visibility: hidden;
+}
+

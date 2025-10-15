@@ -1,0 +1,110 @@
+@font-face{ 
+	font-family: 'StandardIcon';
+	src: url('../fonts/mac-icon-standard.eot');
+	src: url('../fonts/mac-icon-standard.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/mac-icon-standard.woff') format('woff'),
+	     url('../fonts/mac-icon-standard.ttf') format('truetype'),
+	     url('../fonts/mac-icon-standard.svg#webfont') format('svg');
+}
+
+@font-face{ 
+	font-family: 'SimpleIcon';
+	src: url('../fonts/mac-icon-simple.eot');
+	src: url('../fonts/mac-icon-simple.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/mac-icon-simple.woff') format('woff'),
+	     url('../fonts/mac-icon-simple.ttf') format('truetype'),
+	     url('../fonts/mac-icon-simple.svg#webfont') format('svg');
+}
+
+* {
+	margin:		0px;
+	padding:	0px;
+}
+
+#30_years_portrait_container {
+	width: 1366px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	font-family: 'StandardIcon', 'SimpleIcon', Courier, monospace;
+	font-size:  12px;
+	letter-spacing: 0em;
+	line-height: .9em;
+}
+
+#info {
+	background: rgba(255,255,255,.9);
+	padding: 20px;
+	position: absolute;
+	left: 0px;
+	top:0px;
+	width: 300px;
+	z-index: 1000;
+}
+
+#logo {
+	width:120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#info img {
+	opacity: .8;
+}
+
+#info h1 {
+	font-family: 'Myriad Set Pro', sans-serif;
+	font-size: 64px;
+	text-align: center;
+	font-weight: lighter;
+	color: #333;
+}
+
+#info p {
+	font-family: 'Myriad Set Pro', sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #333;
+	padding: 20px 10px 20px 10px;
+	
+}
+
+#info a:link {
+	font-family: 'Myriad Set Pro', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: .1em;
+	color: #333;
+}
+
+#info a:visited {
+	color: #333;
+}
+	
+#info a:hover {
+	color:#3AA;
+}
+
+#info a:active{
+	color:#999;
+}
+
+#info ul {
+}
+
+#info li {
+	list-style: none;
+	padding: 10px;
+	border-top: dotted 1px #333;
+}
+
+#processing {
+	visibility: hidden;
+	position: fixed;
+	left: 0px;
+	top:0px;
+}
+
